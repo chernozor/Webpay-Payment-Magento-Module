@@ -1,0 +1,113 @@
+<?xml version="1.0"?>
+<!--
+/*
+| WebPay Magento Module
+| Copyright (C) 2015 Igor Gambit
+| http://www.webmaster-gambit.ru/
++========================================================*
+| Filename: app/code/local/Gambit/Webpay/etc/config.xml
+| Author: Igor Gambit (Gambit)
+| Url: http://webmaster-gambit.ru
++========================================================*
+| This module is released as free software under the
+| Affero GPL license. You can redistribute it and/or
+| modify it under the terms of this license which you
+| can read by viewing the included agpl.txt or online
+| at www.gnu.org/licenses/agpl.html. Removal of this
+| copyright header is strictly prohibited without
+| written permission from the original author(s).
++========================================================*/
+-->
+<config>
+    <modules>
+        <Gambit_Webpay>
+            <version>1.0.0</version>
+        </Gambit_Webpay>
+    </modules>
+    <global>
+        <models>
+            <webpay>
+                <class>Gambit_Webpay_Model</class>
+            </webpay>
+        </models>
+        <blocks>
+            <webpay>
+                <class>Gambit_Webpay_Block</class>
+            </webpay>
+        </blocks>
+        <resources>
+            <webpay_setup>
+                <setup>
+                    <module>Gambit_Webpay</module>
+                </setup>
+                <connection>
+                    <use>core_setup</use>
+                </connection>
+            </webpay_setup>
+            <webpay_write>
+                <connection>
+                    <use>core_write</use>
+                </connection>
+            </webpay_write>
+            <webpay_read>
+                <connection>
+                    <use>core_read</use>
+                </connection>
+            </webpay_read>
+        </resources>
+        <helpers>
+            <webpay>
+                <class>Gambit_Webpay_Helper</class>
+            </webpay>
+        </helpers>
+    </global>
+    <frontend>
+        <secure_url>
+            <webpay_redirect>/webpay/redirect/</webpay_redirect>
+        </secure_url>
+        <routers>
+            <webpay>
+                <use>standard</use>
+                <args>
+                    <module>Gambit_Webpay</module>
+                    <frontName>webpay</frontName>
+                </args>
+            </webpay>
+        </routers>
+        <translate>
+            <modules>
+                <Gambit_Webpay>
+                    <files>
+                        <default>Gambit_Webpay.csv</default>
+                    </files>
+                </Gambit_Webpay>
+            </modules>
+        </translate>
+    </frontend>
+
+    <adminhtml>
+        <translate>
+            <modules>
+                <Gambit_Webpay>
+                    <files>
+                        <default>Gambit_Webpay.csv</default>
+                    </files>
+                </Gambit_Webpay>
+            </modules>
+        </translate>
+    </adminhtml>
+    <default>
+        <payment>
+            <webpay>
+                <active>0</active>
+                <model>webpay/checkout</model>
+                <title>Gambit WebPay Payment Module</title>
+                <webpay_webpayid></webpay_webpayid>
+                <webpay_test>1</webpay_test>
+                <webpay_cryptkey></webpay_cryptkey>
+                <webpay_currency>BYR</webpay_currency>
+                <webpay_version>2</webpay_version>
+            </webpay>
+        </payment>
+    </default>
+</config>

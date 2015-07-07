@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<!--
+/**
+| WebPay Magento Module
+| Copyright (C) 2015 Igor Gambit
+| http://www.webmaster-gambit.ru/
++========================================================*
+| Filename: etc/modules/Gambit_Webpay.xml
+| Author: Igor Gambit (Gambit)
+| Url: http://webmaster-gambit.ru
++========================================================*
+| This module is released as free software under the
+| Affero GPL license. You can redistribute it and/or
+| modify it under the terms of this license which you
+| can read by viewing the included agpl.txt or online
+| at www.gnu.org/licenses/agpl.html. Removal of this
+| copyright header is strictly prohibited without
+| written permission from the original author(s).
++========================================================*/
+-->
+<config>
+    <modules>
+        <Gambit_Webpay>
+            <active>true</active>
+            <codePool>local</codePool>
+            <depends>
+                <Mage_Paygate/>
+                <Mage_Checkout/>
+                <Mage_Sales/>
+            </depends>
+        </Gambit_Webpay>
+    </modules>
+</config>
