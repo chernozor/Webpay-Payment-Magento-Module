@@ -12,7 +12,7 @@
  License: GNU General Public License, version 2
 
 
-**WebPay Payment Magento Module* — это 100% рабочий и бесплатный плагин для белорусской платёжной системы WebPay на CMS Magento.
+**WebPay Payment Magento Module** — это 100% рабочий и бесплатный плагин для белорусской платёжной системы WebPay на CMS Magento.
 
  Функционал:
  - Имеет меню настроек в Панели Администратора -> Продажи -> Методы Оплаты;
