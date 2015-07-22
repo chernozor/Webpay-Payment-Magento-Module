@@ -1,16 +1,11 @@
 # Webpay-Payment-Magento-Module
  WebPay payment module for Magento CMS
 
- Tags: magento payment module, webpay payment, webpay magento
-
- Requires at least: Magento Community
-
- Tested up to: Magento Community 1.9.1.0
-
- Stable tag: 1.0.0
-
- License: GNU General Public License, version 2
-
+ Tags: magento payment module, webpay payment, webpay magento  
+ Requires at least: Magento Community  
+ Tested up to: Magento Community 1.9.1.0  
+ Stable tag: 1.0.0  
+ License: GNU General Public License, version 2  
 
 **WebPay Payment Magento Module** — это 100% рабочий и бесплатный плагин для белорусской платёжной системы WebPay на CMS Magento.
 
